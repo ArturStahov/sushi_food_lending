@@ -1,0 +1,8 @@
+.site-header__sub-title {
+  display: block;
+  @include font-settings(1.125rem, 1.6, 400, $sub-title-text-color);
+  margin-bottom: 35px;
+}
+.new-line {
+  display: block;
+}

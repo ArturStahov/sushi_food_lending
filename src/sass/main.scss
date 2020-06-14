@@ -1,0 +1,25 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variebles';
+@import 'normalize';
+@import 'helpers/mixins';
+@import 'base';
+
+@import 'components/container';
+@import 'components/bg-fon';
+@import 'components/content-block';
+/*
+ * HEADER
+ */
+
+@import 'components/site-block-pos';
+@import 'components/header/site-header__block';
+@import 'components/header/decor-header-img';
+@import 'components/header/site-header__title';
+@import 'components/header/site-header__sub-title';
+@import 'components/header/content-wrapper';
+@import 'components/button-bay';
+@import 'components/header/header-sushiset-img';
+@import 'components/site-nav/site-nav';
+@import 'components/user-interaction-block';

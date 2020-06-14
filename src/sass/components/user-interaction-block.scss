@@ -1,0 +1,50 @@
+.user-interaction-block {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 130px;
+}
+
+.button_search {
+  width: 40px;
+  height: 40px;
+  border: 2px #ffffff solid;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: $header-button-hover-color;
+    box-shadow: $title-text-color 1px 0 10px;
+  }
+}
+
+.site-user-interaction__ico {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.button_shopping_cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 128px;
+  height: 38px;
+  border: 2px #ffffff solid;
+  border-radius: 19px;
+  background-color: transparent;
+  @include font-settings(0.875rem, 1.2, 400, #ffffff);
+  text-transform: uppercase;
+  outline: none;
+  transition: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $header-button-hover-color;
+    box-shadow: $title-text-color 1px 0 10px;
+  }
+}
