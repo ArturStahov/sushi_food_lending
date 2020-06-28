@@ -1,8 +1,6 @@
 .user-interaction-block {
   display: flex;
-  position: absolute;
-  top: 40px;
-  right: 130px;
+  justify-content: flex-end;
 }
 
 .button_search {

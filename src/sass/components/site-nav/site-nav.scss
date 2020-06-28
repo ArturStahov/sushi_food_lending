@@ -17,8 +17,8 @@
 }
 .site-nav__item {
   &:hover .site-nav__link {
-    @include font-settings(1.2rem, 1.2, 600, $site-nav-link-hover-color);
-    // text-shadow: $title-text-color 1px 0 10px;
+    @include font-settings(1rem, 1.2, 600, $site-nav-link-hover-color);
+    transform: scale(1.1);
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
       0 0 20px $site-nav-link-hover-color, 0 0 30px $site-nav-link-hover-color,
       0 0 40px $site-nav-link-hover-color, 0 0 50px $site-nav-link-hover-color,

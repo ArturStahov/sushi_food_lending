@@ -1,3 +1,14 @@
+//====================container
+$mobile-bp-max: 767px;
+$mobile-w-min: 280px;
+
+$tablet-bp-min: 768px;
+$tablet-w: 688px;
+$tablet-bp-max: 1279px;
+
+$desktop-bp-min: 1280px;
+$desktop-w: 1200px;
+
 $base__body__color: #ffffff;
 //=====================Header=====================
 $site-nav-block-color: #ffffff;
@@ -7,3 +18,17 @@ $sub-title-text-color: #c1c2c3;
 $title-text-color: #c5c98b;
 $header-button-hover-color: #9ea167;
 $site-nav-link-hover-color: #ff230c;
+//==================section Dish==================
+$section-dish-block-color: #c5c98b;
+$advertising-block-bg: #293135;
+$advertising-border-color: #c5c98b;
+$advertising-text-color: #c5c98b;
+$advertising-title-color: #ffffff;
+$advertising-text-desc-color: #ffffff;
+//==================section Offer-day==================
+$offer-day-item-bg: #293135;
+$offer-day-title-text-color: #c5c98b;
+$offer-day-text-desc-color: #ffffff;
+//==================section tittle==================
+$section-title-color: #ffffff;
+$section-decor-line-color: #ffffff;

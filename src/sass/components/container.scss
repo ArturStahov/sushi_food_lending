@@ -1,5 +1,13 @@
 .container {
-  width: 1100px;
   margin: 0 auto;
-  // padding-top: 300px;
+  @media screen and (max-width: $mobile-bp-max) {
+    // width: 100%;
+    width: $mobile-w-min;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    width: $tablet-w;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    width: $desktop-w;
+  }
 }

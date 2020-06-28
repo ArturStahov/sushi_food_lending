@@ -7,13 +7,11 @@
 @import 'base';
 
 @import 'components/container';
-@import 'components/bg-fon';
-@import 'components/content-block';
+
 /*
  * HEADER
  */
-
-@import 'components/site-block-pos';
+@import 'components/header/header-board-img';
 @import 'components/header/site-header__block';
 @import 'components/header/decor-header-img';
 @import 'components/header/site-header__title';
@@ -23,3 +21,18 @@
 @import 'components/header/header-sushiset-img';
 @import 'components/site-nav/site-nav';
 @import 'components/user-interaction-block';
+/*
+ * SECTION_DISH
+ */
+@import 'components/section_dish/site-section-dish';
+@import 'components/section_dish/site-section-dish__fon-board-img';
+@import 'components/section_dish/site-section-dish__block';
+@import 'components/section_dish/site-section-dish__decor-leaves-img';
+@import 'components/section_dish/site-section-dish__decor-platesushi-img';
+@import 'components/section_dish/advertising-dish-block';
+/*
+ * OFFER_DAY
+ */
+@import 'components/section-offer-day/site-section-offer-day';
+@import 'components/section-title/section-title-block';
+@import 'components/section-offer-day/offer-day_block';

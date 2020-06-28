@@ -5,3 +5,82 @@
   font-weight: $weight;
   color: $color;
 }
+// ========== Для перевода px в rem ==========
+@mixin font-size($size, $base: 16) {
+  font-size: $size; // fallback для старых браузеров
+  font-size: ($size / $base) * 1rem;
+}
+// Исспользование
+// .title {
+//     @include font-size(24px);
+// }
+
+// ========== Для media запросов ==========
+// @mixin screen($size) {
+//   $desktop: '(min-width: 1024px)'; // Переменная со значением desktop размера
+//   $tablet: '(min-width: 768px)'; // Переменная со значением tablet размера
+//   @if $size == desktop {
+//     @media only screen and #{$desktop} {
+//       @content;
+//     }
+//   } @else if $size == tablet {
+//     @media only screen and #{$tablet} {
+//       @content;
+//     }
+//   }
+// }
+// Исспользование
+// .wrapper {
+//   margin: 0 auto;
+//   width: 100%;
+//   @include screen('tablet') {
+//     width: 90%;
+//   }
+
+//   @include screen('desktop') {
+//     width: 85%;
+//   }
+// }
+
+// ========== Для retina изображений ==========
+@mixin retina($image, $resolution) {
+  @media (min-resolution: $resolution) {
+    background-image: url($image);
+  }
+}
+// Исспользование
+// .logo {
+//     background-image: url('img/logo.png');
+//     @include retina('img/logo@2x.png', 192dpi);
+// }
+
+// ========== Для шрифтов ==========
+@mixin font-source-sans($size: false, $weight: false, $lh: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+// Исспользование
+// .description {
+//     font-family: "Arial", sans-serif;
+//     @include font-source-sans(14px, 500, 1.4);
+// }
+
+// ========== Для создания псевдоэлементов ==========
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+// Исспользование
+// div::after {
+//     @include pseudo;
+//     top: -1rem; left: -1rem;
+//     width: 1rem; height: 1rem;
+// }

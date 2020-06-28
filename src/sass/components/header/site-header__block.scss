@@ -1,3 +1,7 @@
 .site-header__block {
+  position: relative;
   background-color: $header-block-color;
+  padding-top: 30px;
+  padding-bottom: 58px;
+  padding-right: 80px;
 }

@@ -1,0 +1,42 @@
+.offer-day_block {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url('../images/offer-day/section-offerday-content-block-fon.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.set-item {
+  padding-top: 87px;
+  padding-bottom: 20px;
+  width: 335px;
+  background-color: $offer-day-item-bg;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  &:not(:last-child) {
+    margin-right: 108px;
+  }
+}
+
+.offer-day__set-item-img {
+  position: absolute;
+  top: -145px;
+  left: 0px;
+}
+
+.set-item__titile {
+  @include font-settings(1.375rem, 1.2, 600, $offer-day-title-text-color);
+  margin-bottom: 15px;
+}
+
+.set-item__desc-list {
+  @include font-settings(0.875rem, 1.2, 400, $offer-day-text-desc-color);
+  margin-bottom: 15px;
+}
+
+.set-item__desc-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
