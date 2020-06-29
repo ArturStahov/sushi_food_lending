@@ -34,5 +34,17 @@
  * OFFER_DAY
  */
 @import 'components/section-offer-day/site-section-offer-day';
-@import 'components/section-title/section-title-block';
 @import 'components/section-offer-day/offer-day_block';
+/*
+ * section title
+ */
+@import 'components/section-title/section-title-block';
+/*
+ * section discounts
+ */
+@import 'components/section-discount/site-section-discounts-fon';
+@import 'components/section-discount/section-discount';
+/*
+ * section contact-form
+ */
+@import 'components/contact-form/contact-form';

@@ -1,0 +1,41 @@
+.section-discounts {
+  position: relative;
+}
+.section-discount_block {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url('../images/offer-day/section-offerday-content-block-fon.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.discount__set-item-img {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discount-item {
+  padding-top: 87px;
+  padding-bottom: 20px;
+  width: 355px;
+  position: relative;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.discount-item__titile {
+  @include font-settings(1.375rem, 1.2, 600, $discont-title-text-color);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.discount-item__desc {
+  @include font-settings(1.1rem, 1.2, 400, $discont-text-desc-color);
+  padding-left: 30px;
+  padding-right: 30px;
+}
